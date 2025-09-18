@@ -36,8 +36,9 @@ spacy==3.7.2
 # Audio Processing
 pydub==0.25.1
 
-# Translation
+# Translation (⚠️ if issues, replace with deep-translator)
 googletrans==4.0.0rc1
+httpx==0.13.3   # ✅ aligned with googletrans
 
 # Data Processing
 pandas==2.1.4
@@ -50,9 +51,7 @@ streamlit-mic-recorder==0.0.4
 
 # Utilities
 python-dotenv==1.0.0
-pydantic==2.5.2     # ✅ keep only one version
-httpx==0.26.0
+pydantic==2.5.2   # ✅ only one version
 aiofiles==23.2.1
 
-# Removed invalid package:
-# sentence-transformers-cross-encoder==0.1.0
+# ❌ Removed: sentence-transformers-cross-encoder==0.1.0
