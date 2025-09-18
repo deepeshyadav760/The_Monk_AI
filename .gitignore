@@ -1,0 +1,43 @@
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# VSCode settings
+.vscode/
+
+# Data / database / vector store (generated locally)
+chroma_db/
+# data/
+
+# Streamlit cache
+.streamlit/
+
+# Model weights (if downloaded locally)
+*.bin
+*.ckpt
+*.pt
+*.h5
+*.onnx
+
+# Secrets or keys (if you use any JSON creds, e.g., for Google/LLMs)
+*.json
