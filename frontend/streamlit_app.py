@@ -27,7 +27,8 @@ if not cookies.ready():
     st.stop()
 
 # Constants
-API_BASE_URL = "http://localhost:8000"
+# The new public URL for your deployed FastAPI backend
+API_BASE_URL = "https://the-monk-ai-backend.onrender.com" 
 
 # Session state initialization
 if 'logged_in' not in st.session_state:
