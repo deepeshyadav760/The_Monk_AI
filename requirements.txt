@@ -1,57 +1,58 @@
+# requirements.txt
+
 # Core Framework
-fastapi==0.104.1
-uvicorn==0.24.0
-python-multipart==0.0.6
+fastapi
+uvicorn
+python-multipart
 
 # Database
-pymongo==4.6.0
-motor==3.3.2
+pymongo
+motor
 
 # Vector Database
-chromadb==0.4.18
+chromadb
 
-# LangChain
-langchain==0.0.350
-langchain-community==0.0.3
-langchain-core==0.1.0
+# LangChain (Loosened versions for compatibility)
+langchain
+langchain-community
+langchain-core
 
-# Embeddings & Models
-sentence-transformers==2.2.2
-transformers==4.36.2
-torch==2.5.0   # ✅ updated for Python 3.13
+# Embeddings & Models (Loosened versions for Python 3.13 compatibility)
+sentence-transformers
+transformers
+torch
 
 # API Clients
-groq==0.4.1
-requests==2.31.0
+groq
+requests
 
 # Authentication
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-bcrypt==4.1.2
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
 
 # Text Processing
-nltk==3.8.1
-spacy==3.7.2
+nltk
+spacy
 
 # Audio Processing
-pydub==0.25.1
+pydub
 
-# Translation (⚠️ if issues, replace with deep-translator)
-googletrans==4.0.0rc1
-httpx==0.13.3   # ✅ aligned with googletrans
+# Translation (✅ REPLACED googletrans with a modern, maintained alternative)
+deep-translator
 
 # Data Processing
-pandas==2.1.4
-numpy==1.25.2
+pandas
+numpy
 
 # Web Interface
-streamlit==1.29.0
-streamlit-chat==0.1.1
-streamlit-mic-recorder==0.0.4
+streamlit
+streamlit-chat
+streamlit-mic-recorder
+streamlit-cookies-manager
 
 # Utilities
-python-dotenv==1.0.0
-pydantic==2.5.2   # ✅ only one version
-aiofiles==23.2.1
-
-# ❌ Removed: sentence-transformers-cross-encoder==0.1.0
+python-dotenv
+pydantic
+aiofiles
+httpx
