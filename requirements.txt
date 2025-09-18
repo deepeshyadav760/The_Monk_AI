@@ -1,63 +1,56 @@
-# requirements.txt
+# requirements.txt (Updated)
 
 # Core Framework
-fastapi
-uvicorn
-python-multipart
+fastapi==0.116.2
+uvicorn==0.35.0
+python-multipart==0.0.20
+
+# --- CRITICAL ML/TRANSFORMER LIBRARIES (PINNED VERSIONS) ---
+sentence-transformers==5.1.0
+transformers==4.56.1
+huggingface-hub==0.35.0
+# hf_xet
+# -----------------------------------------------------------
 
 # Database
-pymongo
-motor
+pymongo==4.15.1
+motor==3.7.1
 
 # Vector Database
-chromadb
+chromadb==1.1.0
 
 # LangChain
-langchain
-langchain-community
-langchain-core
-
-# Embeddings & Models (No strict versions)
-sentence-transformers
-transformers
-torch
-torchvision
-torchaudio
+langchain==0.3.27
+langchain-community==0.3.29
+langchain_huggingface==0.3.1
 
 # API Clients
-groq
-requests
+groq==0.31.1
+requests==2.32.5
 
 # Authentication
-python-jose[cryptography]
-passlib[bcrypt]
-bcrypt
+python-jose[cryptography]==3.5.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.3.0
 
 # Text Processing
-nltk
-spacy
+nltk==3.9.1
+spacy==3.8.7
 
 # Audio Processing
-pydub
-
-# Translation
-googletrans==4.0.0rc1
+pydub==0.25.1
 
 # Data Processing
-pandas
-numpy
+pandas==2.3.2
+numpy==2.2.6
 
 # Web Interface
-streamlit
-streamlit-chat
-streamlit-mic-recorder
-streamlit-cookies-manager
+streamlit==1.49.1
 
 # Utilities
-python-dotenv
-pydantic
-httpx
-aiofiles
-
-# Cross-Encoder for Reranking
-sentence-transformers-cross-encoder
+python-dotenv==1.1.1
+pydantic==2.11.9
+pydantic[email]==2.3.0
+httpx==0.28.1
+aiofiles==24.1.0
+deep_translator==1.11.4
